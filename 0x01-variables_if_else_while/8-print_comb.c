@@ -1,7 +1,7 @@
 /*
  * File: 8-print_comb.c
  * Auth: Laryssa Ribeiro
- */
+*/
 
 #include <stdio.h>
 
