@@ -1,5 +1,5 @@
 /*
- * File: 9-print_comb.c
+ * File: 8-print_comb.c
  * Auth: Laryssa Ribeiro
  */
 
