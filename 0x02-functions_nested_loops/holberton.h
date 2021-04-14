@@ -1,5 +1,5 @@
 /*
- * File: 0-holberton.c
+ * File: holberton.h
  * Auth: Laryssa Ribeiro
 *
  */
