@@ -4,7 +4,7 @@
 *
  */
 
-#include "holberton.h"
+#include "0-holberton.c"
 
 /**
  * main - Prints "Holberton" followed by a new line.
