@@ -6,19 +6,22 @@
 
 #include "holberton.h"
 /**
- * main - prints the string "Holberton" from a character array.
- * Return: 0 on success.
+ * main - Print "Holberton" followed by a new line.
+ * Description: You are not allowed to include standard libraries.
+ * Return: 0
  */
 int main(void)
 {
-	char c[] = "Holberton";
-	int i;
+	char holberton[] = "Holberton";
+	int i = 0;
 
-	for (i = 0; i < 9; i++)
+	while (holberton[i] != '\0')
 	{
-		_putchar(c[i]);
+		_putchar(holberton[i]);
+		i++;
 	}
 	_putchar('\n');
+
 	return (0);
 }
 
