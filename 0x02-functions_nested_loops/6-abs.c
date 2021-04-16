@@ -1,6 +1,10 @@
 "/*
  * File: 6-abs.c
  * Auth: Laryssa Ribeiro
+*/
+
+#include "holberton.h"
+
 /**
  * _abs - Computes the absolute value of an integer.
  * @n: The integer to be computed.
