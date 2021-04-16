@@ -4,17 +4,16 @@
 */
 
 #include "holberton.h"
-
 /**
- * _abs - Computes the absolute value of an integer.
- * @n: The integer to be computed.
+ * main - check the code for Holberton School students.
  *
- * Return: The absolute value of the integer.
+ * Return: Always 0.
  */
-int _abs(int n)
+int main(void)
 {
-	if (n >= 0)
-		return (n);
-	else
-		return (-n);
+	int r;
+
+	r = _abs(-1);
+	printf("%d\n", r);
+	return (0);
 }
