@@ -1,7 +1,3 @@
-/*
- * File: 0-main.c
- * Auth: Laryssa Ribeiro
-*/
 #include "holberton.h"
 
 /**
@@ -18,4 +14,3 @@ int main(void)
 
 	return (0);
 }
-
