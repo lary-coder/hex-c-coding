@@ -1,4 +1,3 @@
-
 /*
  * File: 0-isupper.c
  * Auth: Laryssa Ribeiro
@@ -20,3 +19,4 @@ int _isupper(int c)
 	else
 		return (0);
 }
+
