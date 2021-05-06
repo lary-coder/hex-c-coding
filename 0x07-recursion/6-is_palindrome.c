@@ -2,47 +2,51 @@
  * File: 6-is_prime_number.c
  * Auth: Laryssa Ribeiro
  */
-
 #include "holberton.h"
-
-int is_divisible(int num, int div);
-int is_prime_number(int n);
-
 /**
- * is_divisible - Checks if a number is divisible.
- * @num: The number to be checked.
- * @div: The divisor.
- *
- * Return: If the number is divisible - 0.
- *         If the number is not divisible - 1.
- */
-int is_divisible(int num, int div)
+* strlen_1 - gives the length of the string.
+* @s: sting.
+* Return: returns length of the string
+*/
+int strlen_1(char *s)
 {
-	if (num % div == 0)
+	if (*s == '\0')
+	{
 		return (0);
-
-	if (div == num / 2)
+	}
+	return (1 + strlen_1(s + 1));
+}
+/**
+* check_palindrome - check if a string is a palindrome
+* @b: begining
+* @e: end
+* @s: string
+* Return: 1 if is palindrome and 0 if not
+*/
+int check_palindrome(char *s, int b, int e)
+{
+	if (s[b] != s[e])
+	{
+		return (0);
+	}
+	else if (b >= e)
+	{
 		return (1);
-
-	return (is_divisible(num, div + 1));
+	}
+	else
+	{
+		return (check_palindrome(s, ++b, --e));
+	}
 }
 
 /**
- * is_prime_number - Checks if a number is prime.
- * @n: The number to be checked.
- *
- * Return: If the integer is not prime - 0.
- *         If the number is prime - 1.
- */
-int is_prime_number(int n)
+* is_palindrome - check if a string is a palindrome
+* @s: string
+* Return: 1 if is palindrome and 0 if not
+*/
+int is_palindrome(char *s)
 {
-	int div = 2;
+	int len = strlen_1(s);
 
-	if (n <= 1)
-		return (0);
-
-	if (n >= 2 && n <= 3)
-		return (1);
-
-	return (is_divisible(n, div));
+	return (check_palindrome(s, 0, len - 1));
 }
