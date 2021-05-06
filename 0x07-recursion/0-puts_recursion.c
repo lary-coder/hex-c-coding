@@ -1,6 +1,6 @@
 /*
  * File: 0-puts_recursion.c
- * Auth: Brennan D Baraban
+ * Auth: Laryssa Ribeiro
  */
 
 #include "holberton.h"
